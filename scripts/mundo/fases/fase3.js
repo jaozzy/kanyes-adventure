@@ -54,15 +54,15 @@ $(document).ready(function () {
     const game = new Phaser.Game(gameConfig);
 
     function preload() {
-        this.load.image('kanye', '../../../img/sprites/kanye_west.png');
-        this.load.image('coin', '../../../img/sprites/coin.png');
-        this.load.image('superCoin', '../../../img/sprites/superCoin.png');
-        this.load.image('icon', '../../../img/icons/kanye_points.png');
-        this.load.image('lifeIcon', '../../../img/sprites/kanye_lifes.png');
-        this.load.image('bandeira', '../../../img/sprites/bandeira.png');
-        this.load.image('pingpong', '../../../img/sprites/ping_pong.png');
-        this.load.image('microfone', '../../../img/sprites/microfone.png');
-        this.load.image('abelha', '../../../img/sprites/bee.png');
+        this.load.image('kanye', '/kanyes-adventure/img/sprites/kanye_west.png');
+        this.load.image('coin', '/kanyes-adventure/img/sprites/coin.png');
+        this.load.image('superCoin', '/kanyes-adventure/img/sprites/superCoin.png');
+        this.load.image('icon', '/kanyes-adventure/img/icons/kanye_points.png');
+        this.load.image('lifeIcon', '/kanyes-adventure/img/sprites/kanye_lifes.png');
+        this.load.image('bandeira', '/kanyes-adventure/img/sprites/bandeira.png');
+        this.load.image('pingpong', '/kanyes-adventure/img/sprites/ping_pong.png');
+        this.load.image('microfone', '/kanyes-adventure/img/sprites/microfone.png');
+        this.load.image('abelha', '/kanyes-adventure/img/sprites/bee.png');
     }
 
         let self = this;
