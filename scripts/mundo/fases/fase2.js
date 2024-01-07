@@ -481,7 +481,7 @@ $(document).ready(function () {
         // Define o detector de colisão entre o jogador e a bandeira
         this.physics.add.collider(player, flag, function() {
             // Redireciona para a próxima fase
-            window.location.href = '../../../pages/fases/fase3.html'; // Substitua pela URL desejada
+            window.location.href = '/kanyes-adventure/pages/fases/fase3.html'; // Substitua pela URL desejada
         }, null, this);
 
         this.physics.add.collider(player, ground, function () {
