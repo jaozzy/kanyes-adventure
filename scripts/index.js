@@ -8,6 +8,6 @@ $(document).ready(function() {
     });
 
     $('.play-btn').on('click', function() {
-        window.location.href = '/pages/fases/fase1.html';
+        window.location.href = '../pages/fases/fase1.html';
     });
 });
