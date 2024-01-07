@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final do Jogo</title>
+    <!-- Adicionando o Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('../img/kanye.jpeg'); /* Caminho para a sua imagem */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4" style="background-color: white;">Parabéns! Você completou o teste do jogo!</h1>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <table class="table table-striped" style="background-color: white;">
+                <thead>
+                <tr>
+                    <th scope="col">Pontuação Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><strong id="totalPoints">0</strong></td> <!-- Este campo será preenchido dinamicamente -->
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<audio autoplay loop>
+    <source src="../audio/music/god_is.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Recupera os pontos totais do Local Storage
+        const totalPoints = localStorage.getItem('points2');
+        
+        // Atualiza o conteúdo da célula de pontos totais na tabela
+        document.getElementById('totalPoints').innerText = totalPoints;
+    });
+</script>
+</body>
+</html>
